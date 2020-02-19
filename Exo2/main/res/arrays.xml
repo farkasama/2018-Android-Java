@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event">
+        <item>Austerlitz</item>
+        <item>Ièna</item>
+        <item>Waterloo</item>
+    </string-array>
+
+
+    <integer-array name="annee">
+        <item>1805</item>
+        <item>1806</item>
+        <item>1815</item>
+    </integer-array>
+
+    <integer-array name="mois">
+        <item>12</item>
+        <item>10</item>
+        <item>6</item>
+    </integer-array>
+    <integer-array name="jour">
+        <item>2</item>
+        <item>14</item>
+        <item>18</item>
+
+    </integer-array>
+</resources>

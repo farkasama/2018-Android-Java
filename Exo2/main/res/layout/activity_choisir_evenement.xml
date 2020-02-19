@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoisirEvenement">
+
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="événement" />
+
+    <ListView
+        android:id="@+id/list"
+        android:choiceMode="singleChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/date"
+        android:layout_below="@id/event" />
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:text="année" />
+
+        <EditText
+            android:id="@+id/annee"
+            android:maxLength="4"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:hint="année"
+            android:inputType="number" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="mois" />
+
+        <EditText
+            android:hint="mois"
+            android:maxLength="2"
+            android:id="@+id/mois"
+            android:layout_width="60sp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:text="jour" />
+
+        <EditText
+            android:hint="jour"
+            android:maxLength="2"
+            android:id="@+id/jour"
+            android:layout_width="60sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="jouer"
+        android:onClick="clickButton"/>
+
+
+</RelativeLayout>
